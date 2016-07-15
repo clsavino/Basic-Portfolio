@@ -1,0 +1,50 @@
+
+body {
+	width: 960px;
+}
+
+.header-wrapper {
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: flex-start;
+	align-content: center;
+}
+
+h1#name {
+	float: left;
+	padding: 20px;
+	margin: 0px;
+}
+ nav.navbar {
+ 	float: right;
+ 	text-align: center;
+ 	padding:20px;
+ 	margin: 0px;
+ }
+
+.main-content-inner {
+	display: flex;
+}
+
+main {
+  float: left;
+  width: 650px;
+  margin:20px;
+  padding: 5px;
+}
+
+aside {
+  float: right;
+  width: 270px;
+  margin: 20px;
+  padding: 5px;
+}
+
+footer {
+  clear: both;
+  margin-bottom: 0;
+  padding: 30px;
+
+}  
