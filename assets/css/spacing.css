@@ -1,6 +1,12 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
 
-body {
-	width: 960px;
+.content {
+  width: 960px;
+  min-height: 100%;
+  margin: 0 auto -75px; /*the bottom margin is the neg. value of the footer's height*/
 }
 
 .header-wrapper {
@@ -24,8 +30,17 @@ h1#name {
  	margin: 0px;
  }
 
+ .navbar a {
+  padding:5px;
+ }
+
 .main-content-inner {
 	display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-content: center;
 }
 
 main {
@@ -35,16 +50,65 @@ main {
   padding: 5px;
 }
 
+.bio img {
+  float:left;
+  margin: 0 10px 10px 0;
+}
+
+.outer {
+  position: relative;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 0em;
+  width: 190px;
+  padding: 5px;
+  margin-bottom: 45px;
+  margin-left: 30px;
+  font-size: 16px;
+}
+
+.outer img {
+  margin: 30px;
+}
+
+main a {
+  margin-bottom: 30px;
+}
+
 aside {
   float: right;
   width: 270px;
   margin: 20px;
   padding: 5px;
+  height: 115px;
 }
 
-footer {
+input{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 590px;
+  padding: 5px;
+}
+
+textarea {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 580px;
+  height: 100px;
+  padding: 10px;
+}
+
+button {
+  margin: 10px 0px 20px 0px;
+  padding: 10px 15px;
+}
+
+footer, .push {
   clear: both;
   margin-bottom: 0;
   padding: 30px;
-
+  height: 75px;
 }  
