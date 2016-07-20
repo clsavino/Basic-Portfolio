@@ -13,7 +13,7 @@ html, body {
 	display:flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: flex-start;
 	align-content: center;
 }
@@ -21,13 +21,14 @@ html, body {
 h1#name {
 	float: left;
 	padding: 20px;
-	margin: 0px;
+	margin-left: 70px;
 }
+
  nav.navbar {
  	float: right;
  	text-align: center;
  	padding:20px;
- 	margin: 0px;
+ 	margin-right: 50px;
  }
 
  .navbar a {
@@ -110,5 +111,5 @@ footer, .push {
   clear: both;
   margin-bottom: 0;
   padding: 30px;
-  height: 75px;
+  height: 10px;
 }  
