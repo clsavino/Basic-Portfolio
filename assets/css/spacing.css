@@ -3,7 +3,7 @@ html, body {
   margin: 0;
 }
 
-.content {
+.content-wrapper {
   width: 960px;
   min-height: 100%;
   margin: 0 auto -75px; /*the bottom margin is the neg. value of the footer's height*/
