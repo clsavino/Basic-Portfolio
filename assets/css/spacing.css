@@ -3,40 +3,43 @@ html, body {
   margin: 0;
 }
 
-.content-wrapper {
+.main-content-outer {
   width: 960px;
-  min-height: 100%;
-  margin: 0 auto -75px; /*the bottom margin is the neg. value of the footer's height*/
+  margin: 0 auto 30px auto;
 }
 
 .header-wrapper {
-	display:flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: flex-start;
-	align-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: center;
 }
 
 h1#name {
-	float: left;
-	padding: 20px;
-	margin-left: 70px;
+  float: left;
+  padding: 25px;
+  margin-left: 130px;
+}
+
+h3 {
+  padding: 10px;
 }
 
  nav.navbar {
- 	float: right;
- 	text-align: center;
- 	padding:20px;
- 	margin-right: 50px;
+  float: right;
+  text-align: center;
+  padding: 25px;
+  margin-right: 100px;
  }
 
  .navbar a {
-  padding:5px;
+  padding: 10px;
  }
 
 .main-content-inner {
-	display: flex;
+  display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around;
@@ -47,13 +50,23 @@ h1#name {
 main {
   float: left;
   width: 650px;
-  margin:20px;
-  padding: 5px;
+  margin: 20px 20px 0 0;
+  padding: 25px;
 }
 
 .bio img {
   float:left;
-  margin: 0 10px 10px 0;
+  /*margin: 0 10px 10px 0;*/
+  margin: 20px 20px 20px 0;
+}
+
+.bio p {
+  margin: 0 20px 0 0;
+  line-height: 1.5em;
+}
+
+main hr {
+  margin: 20px 0 10px 0;
 }
 
 .outer {
@@ -65,26 +78,24 @@ main {
   bottom: 0;
   left: 0em;
   width: 190px;
-  padding: 5px;
-  margin-bottom: 45px;
-  margin-left: 30px;
+  padding: 10px 15px;
+  margin-bottom: 20px;
   font-size: 16px;
 }
 
-.outer img {
-  margin: 30px;
+div.placeholder {
+  display: inline-block;
+  float: left;
+  margin: 20px 20px 0 20px;
+}
+
+.placeholder img {
+  width: 220px;
+  margin: 0;
 }
 
 main a {
   margin-bottom: 30px;
-}
-
-aside {
-  float: right;
-  width: 270px;
-  margin: 20px;
-  padding: 5px;
-  height: 115px;
 }
 
 input{
@@ -104,12 +115,24 @@ textarea {
 
 button {
   margin: 10px 0px 20px 0px;
-  padding: 10px 15px;
+  padding: 10px 20px;
 }
 
-footer, .push {
+aside {
+  float: right;
+  width: 270px;
+  margin:  20px 0 20px 20px;
+  padding: 5px;
+}
+
+aside img  {
+  padding: 5px 0;
+  margin-bottom: 20px;
+}
+
+footer {
   clear: both;
   margin-bottom: 0;
-  padding: 30px;
+  padding: 25px;
   height: 10px;
 }  
